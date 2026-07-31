@@ -1,2 +1,1 @@
-# Sensorial_Map_Ucl
-IA aplicada a engenharia, projeto 
+Primeira aula de IA aplica a engenharia 
