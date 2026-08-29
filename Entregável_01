@@ -1,0 +1,66 @@
+1 – CONTEXTO DO PROBLEMA EM UM PARAGRAFO: 
+Muitas pessoas com Transtorno de Espectro Autista (TEA) reagem de maneira exagerada ou indiferente 
+aos mais diversos estímulos. Cerca 54% das crianças, entre 2 a 7 anos de idade, com TEA apresentam 
+respostas hipersensoriais aos estímulos apresentados. Essas pessoas com sistemas sensoriais hiperativos 
+ou hipoativos podem se afastar ou resistir a participar de atividades sociais, dessa forma prejudicando 
+sua inclusão com a sociedade. Para um terapeuta, entender qual estímulo é benéfico ou maléfico para o 
+paciente com TEA é importante para poder conduzir um tratamento de integração sensorial de maneira mais 
+agradável e eficiente. O quadro sensorial é uma ferramenta usada para expor a estímulos diversos de 
+maneira controlada pessoas neurodivergentes com objetivo de acalmar, introduzir a novos estímulos e 
+identificar sensações favoritas. Ajudar os profissionais a identificar qual estímulo os pacientes 
+têm aversão e qual tem atração através da visão computacional é objetivo do projeto. 
+
+Referências:  
+
+Vives-Vilarroig, J., Ruiz-Bernardo, P., & García-Gómez, A. (2022). 
+Sensory integration and its importance in learning for children with autism 
+spectrum disorder. Cadernos Brasileiros de Terapia Ocupacional, 30, e2988. 
+https://doi.org/10.1590/2526-8910.ctoAR22662988 
+
+BRITES, Luciana. Qual a importância dos sistemas sensoriais para crianças com 
+TEA - Instituto NeuroSaber. Disponível em: 
+<https://institutoneurosaber.com.br/artigos/qual-a-importancia-dos-sistemas-sensoriais-para-
+criancas-com-tea/#A_Importancia_dos_Sistemas_Sensoriais_para_criancas_com_TEA>. Acesso em: 27 ago.. 2026. 
+
+Schaaf RC, Case-Smith J. Sensory interventions for children with autism. J Comp Eff Res. 
+2014 May;3(3):225-7. doi: 10.2217/cer.14.18. Erratum in: J Comp Eff Res. 2014 Jul;3(4):446. PMID: 24969147. 
+
+
+2 – LISTA DE REQUISITOS FUNCIONAIS, NUMERADOS, COMEÇANDO COM VERBO: 
+2.1 - Criar um quadro sensorial com 2 itens; 
+2.2 - Capturar um vídeo do quadro sensorial; 
+2.2 - Detectar a mão e sua posição; 
+2.3 - Identificar se a mão está interagindo com um dos itens do quadro; 
+2.4 - Quantizar o tempo efetivo de interação com cada item do quadro; 
+2.5 - Gerar um relatório de fácil entendimento e um mapa de calor com as informações obtidas. 
+
+3 – LISTA DE REQUISITOS NAO FUNCIONAIS, NUMERADOS: 
+3.1 - Assegurar a anonimização total dos pacientes, restringindo o enquadramento da câmera e 
+o processamento computacional estritamente às mãos e ao quadro sensorial, sem capturar rostos, 
+para garantir total conformidade com a LGPD e regras éticas do projeto. 
+3.2 - Operar o sistema de forma 100% local (arquitetura sem interface web e sem servidor), 
+eliminando a dependência de serviços em nuvem ou conexão com a internet para proteger 
+dados médicos sensíveis da clínica. 
+3.3 - Garantir a portabilidade do pipeline (construído em Python puro com bibliotecas de código aberto) 
+para que seja executável de maneira fluida em computadores ou notebooks convencionais e de baixo poder 
+de processamento disponíveis na rede municipal de ensino e clínicas. 
+3.4 - Manter a robustez e a precisão do rastreamento no OpenCV frente a oscilações de iluminação natural do 
+ambiente terapêutico, utilizando estratégias adequadas de conversão de espaços de cor (como BGR para HSV) 
+para separar a cor do brilho. 
+3.5 - Processar o volume de matrizes de dados da sessão (NumPy e SciPy) de maneira otimizada, 
+garantindo que o relatório final formatado em PDF (matplotlib) seja gerado e salvo quase 
+instantaneamente após a conclusão do vídeo da sessão. 
+3.6 - Dispensar a necessidade de treinamento técnico complexo para os profissionais de saúde, 
+assegurando que o output do sistema seja um documento visual limpo, com métricas e um mapa de 
+calor fáceis de interpretar clinicamente. 
+3.7 - Garantir a reprodutibilidade estrutural do projeto, utilizando apenas tecnologias assistivas e 
+materiais físicos de baixo custo no desenvolvimento do hardware, viabilizando a replicação do quadro 
+por instituições parceiras (como APAEs). 
+3.8 - Estruturar o repositório de arquivos com rastreabilidade total de versões (commits datados por aluno),
+permitindo a auditoria do código fonte durante as fases de prova de conceito e validação cruzada do artigo científico. 
+
+4 – AS RESTRIÇOES ETICAS DO PROJETO, COM UMA LINHA DE JUSTIFICATIVA CADA: 
+
+5 – O QUE FICA FORA DO ESCOPO E POR QUÊ? 
+
+ 
