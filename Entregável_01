@@ -59,8 +59,11 @@ por instituições parceiras (como APAEs).
 3.8 - Estruturar o repositório de arquivos com rastreabilidade total de versões (commits datados por aluno),
 permitindo a auditoria do código fonte durante as fases de prova de conceito e validação cruzada do artigo científico. 
 
-4 – AS RESTRIÇOES ETICAS DO PROJETO, COM UMA LINHA DE JUSTIFICATIVA CADA: 
+4 – AS RESTRIÇOES ETICAS DO PROJETO, COM UMA LINHA DE JUSTIFICATIVA CADA:
 
 5 – O QUE FICA FORA DO ESCOPO E POR QUÊ? 
+5.1 - Reconhecimento facial e identificação do usuário: assegurar o cumprimento da LGPD e preservar o anonimato do usuário.
+5.2 - Dados em Nuvem: não será implementado para não ter risco de vazamento de dados médicos.
+5.3 - Uso de IA para diagnósticos: o programa será apenas uma ferramenta auxiliar para coleta de dados.
+5.4 - Desenvolvimento de interfaces complexas e/ou mobile: ela será feita, inicialmente, localmente, para não aumentar o custo, e não extrapolar o prazo.
 
- 
