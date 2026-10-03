@@ -1,1 +1,73 @@
+Integrantes
+Bernardo Miossi Borsoi
+…
+…
+…
+Lucas Souza Cerqueira
+Samuel de Oliveira Magalhães Paula
+
+Inteligência Artificial Aplicada
+
+- Apresentação e Definição  da Disciplina
+- 31/07/2026
+Aula 1: A professora apresentou o projeto que vamos desenvolver ao longo do semestre, vamos criar um sistema de visão computacional para acompanhar
+a interação de uma pessoa com um quadro sensorial, gerando dados quantitativos e um mapa de calor, as tecnologias principais da nossa stack serão: Matplotlib, 
+NumPy, OpenCV e Python, foi mostrado uma ordem, lógica para facilitar a visualização do processo: vídeo gravado, detecção da mão, análise de posição, mapa de calor,
+relatório.
+Ficou claro, também, que o foco do sistema é apenas medir a interação com o painel, sem tentar fazer diagnóstico clínico ou adivinhar emoções. 
+
+- Estruturação do Repositório e GitHub
+- 02/08/2026
+Aula 2: Iniciamos a organização e a estruturação inicial do projeto, criamos um repositório, o foco inicial foi entender o uso do GitHub: criação de pastas, 
+nomenclatura de arquivos e versionamento por commits, mapeamos também as etapas prioritárias de desenvolvimento: captura da mão, mapeamento e registro de coordenadas, 
+contagem de tempo por zona, mapa de calor visual, exportação dos relatórios, usaremos o GitHub para armazenar dados, exemplificar o processo de criação do projeto, 
+e mostrar a sua evolução.
+
+- Fronteiras Éticas
+- 07/08/2026 
+Aula 3: Discutimos, compreendemos e estabelecemos os limites étnico do projeto. Como base, apenas as mãos serão gravadas e analisadas no projeto e, em essência,  
+somente dados sobre suas posições e tempo permanecido em uma zona serão retornados. Não coletamos dados sobre rosto ou expressões e não  tentaremos determinar 
+sentimentos ou inferir diagnóstico.
+
+- Levantamento de Requisitos
+- 14/08/2026 
+Aula 4: Analisamos as necessidades do projeto, referentes a como o mesmo seria mais optimal ao profissional. A metrificação e quantização dos dados é 
+crucial para termos resultados objetivos sobre a sessão. Com isso, tomamos como crucial a existência de funções como a identificação das áreas do quadro, 
+identificação da mão, geração do mapa de calor, cálculo de retenção de cada área do quadro sensorial e geração do relatório.
+
+- OpenCV e Manipulação de Imagens e Vídeos
+- 21/08/2026 
+Aula 5: Vimos a utilização do OpenCV em fotos e vídeos, abordamos conceitos como fps, resolução, RGB e BGR, HSV, destrinchamos como podemos usar e manipular 
+o vídeo para conseguir maior precisão de dados, e analisamos suas possíveis aplicações para o nosso projeto.
+
+- Pesquisa Científica
+- 27/08/2026
+Aula 6: Iniciamos as pesquisas utilizando referências científicas obtidas em plataformas confiáveis, como o Portal CAPES, o Google Scholar, o IEEE Xplore 
+e a SciELO. Durante esse processo, aprendemos que é possível realizar uma análise preliminar de um artigo em aproximadamente 15 minutos, verificando se o 
+título e o resumo respondem à questão de pesquisa proposta. Além disso, observamos que os principais resultados costumam ser apresentados em figuras e 
+tabelas, bem como destacados nas conclusões elaboradas pelos autores.
+
+- Câmera e Fichamento
+- 04/09/2026
+Aula 8: Vimos sobre o uso da câmera e como a usar, fazendo sua calibração, além de trabalharmos nos fichamentos dos artigos, vimos a importância da calibração 
+para não gerar dados falsos, motivados por possíveis variações, como a inclinação e distância da câmera.
+
+- Pipeline e Matriz
+- 11/09/2026 
+Aula 9: Revisamos o pipeline do projeto integrando OpenCV e Mediapipe para estruturar o fluxo contínuo de detecção, calibração e acumulação espacial. 
+A quantização dos dados é fundamental para obtermos métricas objetivas durante a sessão. Com isso, aplicamos o conceito de binning espacial utilizando 
+uma matriz acumuladora em NumPy, o que nos permite identificar a posição da mão frame a frame, mapear sua célula correspondente na grade e contabilizar 
+a frequência de presença para a geração do mapa de calor.
+
+- Revisão das Partes Principais do Projeto
+- 15/09/2026 
+Aula 10: Revisamos as partes principais do projeto: Python, OpenCV, MediaPipe e Numpy. Cada um com sua utilização. Python como linguagem de programação, 
+base para a estruturação do código e escolhido pelo seu acervo de bibliotecas, além da sua facilidade para programar. OpenCV para atuar na visão computacional, 
+capturando os frames dos vídeos. MediaPipe para identificar a mão nos frames. Numpy para auxiliar no uso de matrizes e vetores.
+
+- Câmera e Fichamento
+- 18/09/2026
+Aula 11: Uma aula prática, Desafio da Zona Secreta, com o objetivo de desenvolver o mapa de calor. Usamos um vídeo de nossa mão para tentar criar 
+um mapa de calor, detectando a área da imagem que a mão se localizava, nas primeiras tentativas houve diversas falhas, mas ao decorrer de explicações 
+e tentativas obtivemos um resultado positivo.
 
