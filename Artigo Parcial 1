@@ -1,0 +1,97 @@
+https://docs.google.com/document/d/1ogViQAIP8EjWHRPb8Ev6SjmrwQUn2VVmgWBnZLb5cXQ/edit?tab=t.0
+
+
+ESTIMULAÇÃO E INTEGRAÇÃO SENSORIAL: SEU AUXÍLIO NO TRATAMENTO DE INTEGRAÇÃO SENSORIAL COM PACIENTE TEA
+
+Bernardo Miossi Borsoi
+Samuel de Oliveira Magalhães Paula
+Cauã Sant’Anna Silva Christo
+Lucas Souza Cerqueira
+Keven Correa da Silva
+
+
+RESUMO
+
+O Transtorno do Espectro Autista (TEA) habitualmente enfrenta diversos desafios na regulação sensorial e no engajamento comportamental da criança ao longo do seu desenvolvimento. Diante disso, destaca-se a dificuldade de aplicar e manter rotinas consistentes de estratégias sensoriais no cotidiano escolar e familiar de crianças com TEA, o que torna o manejo dessas questões muito mais complexo para pais e educadores. Este trabalho propõe o desenvolvimento de um quadro sensorial físico integrado a um sistema não intrusivo de visão computacional. Utilizando tecnologias como Python, OpenCV e MediaPipe, o sistema irá mapear e quantificar a frequência  de interação do paciente com diferentes elementos manipulativos, como texturas e botões, atuando como uma ferramenta para auxiliar no tratamento de crianças com TEA. A partir de uma fundamentação teórica e metodológica sobre a eficácia da integração sensorial para pacientes com TEA, bem como a aplicabilidade das estratégias sensoriais no cotidiano do paciente. Os resultados teóricos e práticos das intervenções de integração sensorial revelaram uma grande eficácia em promover engajamento e diminuição de estereotipias e aversões. Conclui-se que o quadro sensorial com a visão computacional consolida uma ferramenta promissora para auxiliar terapeutas no acompanhamento e na mitigação das dificuldades sensoriais do TEA. 
+
+
+
+
+
+
+INTRODUÇÃO
+
+Muitas pessoas com Transtorno de Espectro Autista (TEA) reagem de maneira exagerada ou indiferente aos mais diversos estímulos. Cerca 54% das crianças, entre 2 a 7 anos de idade, com TEA apresentam respostas hipersensoriais aos estímulos apresentados (Schaaf RC; Case-Smith J, 2014). Essas pessoas com sistemas sensoriais hiperativos ou hipoativos podem se afastar ou resistir a participar de atividades sociais, dessa forma prejudicando sua inclusão com a sociedade (Beatrix Siqueira et al.,2022). 
+
+Para um terapeuta, entender qual estímulo é benéfico ou maléfico para o paciente com TEA é importante para poder conduzir um tratamento de integração sensorial de maneira mais agradável e eficiente. Profissionais enfatizam que observar as crianças enquanto interagem com brinquedos e instrumentos de observação é importante para o diagnóstico precoce do TEA (OLIVEIRA JENDREIECK, Ceres, 2017).O quadro sensorial é uma ferramenta física usada para expor pessoas neurodivergentes a estímulos diversos de maneira controlada,com objetivo de acalmar, introduzir novos estímulos e identificar sensações favoritas. Nesse contexto, ajudar os profissionais com um software facilmente reproduzível que a identifique com qual estímulo os pacientes têm aversão e qual tem atração através do tempo de permanência de interação com visão computacional é objetivo do projeto.
+.
+
+2      FUNDAMENTAÇÃO TEÓRICA
+
+2.1 Transtorno do Espectro Autista (TEA) e o processamento Sensorial
+
+O Transtorno do Espectro Autista (TEA) é caracterizado como uma condição do neurodesenvolvimento marcada por prejuízos  na comunicação e interação social, além da presença de padrões restritos e repetitivos de comportamento (APA, 2014, p. 50). Entre as características principais do diagnóstico, se destacam as atipicidades no processamento sensorial, que afetam a forma de como a criança interpreta e reage aos estímulos do ambiente.
+
+Conforme apontam Cardoso e Blanco (2019, p. 110), o processamento sensorial se configura como uma função neurofisiológica essencial responsável por registrar , organizar e interpretar as sensações captadas pelos receptores sensoriais. A alteração nessa função interfere diretamente na regulação do comportamento infantil, manifestando-se por meio de respostas hiper-responsivas, hiporresponsivas ou de busca sensorial contínua (Shimizu; Miranda, 2012; Cardoso; Blanco, 2019). 
+
+2.2 Integração Sensorial de Ayres e Ferramentas Sensoriais 
+
+A Teoria da Integração Sensorial propõe que a organização das sensações é a base para o aprendizado e comportamentos adaptativos (Ayres, 1972, p. 1; Momo; Silvestre, 2011). A Terapia de Integração Sensorial (TIS) e o uso de "dietas sensoriais" , que são rotinas diárias com estímulos estruturados, ajudam na autorregulação e organização do comportamento (Souza, 2020). Em revisão sistemática, Cardoso e Blanco (2019, p. 119) apontam que 67% dos estudos com TIS demonstraram eficácia. 
+
+
+
+3     TRABALHOS RELACIONADOS
+
+A literatura acadêmica recente tem buscado compreender as particularidades sensoriais de crianças com Transtorno do Espectro Autista (TEA) e explorar soluções tecnológicas para mensurar essas respostas de forma objetiva. Estudos de caso-controle evidenciam que problemas no processamento sensorial são majoritariamente presentes em condições neurodivergentes. Pesquisas demonstram que aproximadamente 73% das crianças com TEA apresentam problemas sensoriais definitivos, possuindo forte correlação negativa entre perfis sensoriais e a severidade do autismo. A principal limitação dos diagnósticos tradicionais, contudo, é a dependência de relatos subjetivos dos pais (como o Short Sensory Profile), tornando a avaliação clínica vulnerável a interpretações tendenciosas e falhando em diferenciar o contexto exato da reação da criança. 
+
+Para suprir a subjetividade humana com métricas exatas, abordagens recentes têm integrado inteligência artificial na análise motora. Mutersbaugh et al. (2025) avaliaram modelos de deep learning para identificar padrões motores que diferenciam crianças com e sem TEA. Por meio de sensores inerciais (IMUs) acoplados nas mãos de 41 crianças, os pesquisadores rastrearam a cinemática dos braços durante tarefas físicas direcionadas. O estudo provou a existência de diferenças motoras quantificáveis na coordenação olho-mão, alcançando uma precisão de 91,87% e um F1-score de 93,66% na classificação das crianças utilizando um autoencoder convolucional com camadas LSTM.
+
+Embora o uso de tecnologia traga precisão matemática à avaliação, o que ainda falta no âmbito de pesquisa é a eliminação da intrusividade. O rastreamento exigido por Mutersbaugh et al. (2025) obriga o uso de hardwares físicos (wearables) fixados ao corpo, o que pode gerar desconforto severo em crianças com hipersensibilidade tátil, alterando seu comportamento natural e prejudicando a intervenção sensorial. Nosso projeto propõe preencher essa lacuna unindo a objetividade quantitativa da tecnologia com a Terapia de Integração Sensorial (TIS), utilizando visão computacional de forma 100% não intrusiva. 
+
+Em vez de depender do relato subjetivo dos pais ou de sensores físicos desconfortáveis, o sistema proposto medirá matematicamente o tempo exato de interação física com diferentes estímulos de um quadro sensorial, gerando dados objetivos para o terapeuta.
+
+4      PROCEDIMENTOS METODOLÓGICOS
+
+Para a construção do sistema de rastreamento não intrusivo integrado ao quadro sensorial, o projeto adotará uma abordagem fundamentada em técnicas de visão computacional, eliminando a necessidade de marcadores físicos no corpo do usuário.
+
+A detecção de movimento e interação será inspirada em aplicações de acessibilidade digital, como o projeto E-motion, que utiliza captura de vídeo para traduzir a movimentação espacial das mãos em comandos de sistema para pessoas com limitações motoras. Seguindo essa lógica de substituição da necessidade de controle motor fino por interações mais amplas e rastreáveis, o sistema será desenvolvido utilizando a linguagem de programação Python, com o suporte das bibliotecas OpenCV para a manipulação e processamento do fluxo de vídeo, vindo de uma webcam, e MediaPipe para o rastreamento preciso das articulações das mãos.
+
+A arquitetura do software consiste em mapear as coordenadas espaciais das mãos capturadas pela webcam e relacioná-las com as zonas de interesse físicas do quadro sensorial (como texturas e botões). Para garantir a precisão espacial independente do ângulo da câmera, será aplicada uma transformação de perspectiva (homografia) utilizando a biblioteca NumPy. Essa técnica transformará os pixels da imagem em posições bidimensionais reais em uma grade virtual previamente calibrada.
+
+Ao detectar a presença das coordenadas da mão do paciente sobre uma região específica do quadro — inspirando-se no mapeamento de zonas virtuais já validado na literatura —, o algoritmo registrará, em tempo real, o tempo de contato contínuo e a frequência total de interação. Esses dados brutos serão processados para gerar um mapa de calor e relatórios quantitativos. Para garantir a adequação às diretrizes de privacidade e conforto do paciente com TEA, o algoritmo será configurado estritamente para o mapeamento e contagem de âncoras anatômicas dos braços e mãos, descartando qualquer processamento ou armazenamento de expressões faciais.
+
+
+
+
+Referências:
+
+MUTERSBAUGH, J.; SU, W.; BHAT, A.; GANDJBAKHCHE, A. Deep Learning Approaches for Classifying Children With and Without Autism Spectrum Disorder Using Inertial Measurement Unit Hand Tracking Data: Comparative Study. JMIR Medical Informatics, v. 13, e73440, 2025. DOI: 10.2196/73440.
+Sensory processing patterns among children with autism spectrum disorder (ASD) and attention deficit hyperactivity disorder (ADHD) using short sensory profile and evoked potentials: a case–control study.
+EXPERIÊNCIAS SENSORIAIS EM PESSOAS COM AUTISMO E O ENSINO DE
+CIÊNCIAS. SISYPHUS JOURNAL OF EDUCATION VOLUME 10, ISSUE 03, 2022, PP 141-165 DOI:https://doi.org/10.25749/sis.27551 CC BY-NC 4.0
+
+Souza VRB. A atuação do terapeuta ocupacional com base na Teoria da Integração Sensorial na assistência de crianças com Transtorno do Espectro Autista (TEA)  durante a pandemia da Covid-19. Rev. Interinst. Bras. Ter. Ocup. Rio de Janeiro. 2020. suplemento, v.4(3): 371-379. DOI:https://doi.org/10.47222/2526-3544.rbto34026
+
+
+ARTES VISUAIS SENSORIAIS COMO FERRAMENTA PARA ATUAÇÃO DO PROFESSOR JUNTO AS CRIANÇAS AUTISTAS NO CONTEXTO ESCOLAR Revista Eletrônica de Divulgação Científica do Centro Universitário Don Domênico – UNIDON 14ª Edição – janeiro de 2024 - ISSN 2177-4641 
+
+ACOMODAÇÃO SENSORIAL COMO RECURSO TERAPÊUTICO OCUPACIONAL NA PRÁTICA DA INTEGRAÇÃO SENSORIAL NO AUTISMO January 2025 Revista Multidisciplinar do Nordeste Mineiro 2(01):1-17 DOI:10.61164/rmnm.v2i01.3466
+
+
+
+TERAPIA DE INTEGRAÇÃO SENSORIAL E O TRANSTORNO DO ESPECTRO AUTISTA: UMA REVISÃO SISTEMÁTICA DE LITERATURA 
+Revista Conhecimento Online | Novo Hamburgo | a. 11 | v. 1 | jan./abr. 2019 Nathalia Rodrigues Cardoso e Marília Bazan Blanco DOI:https://doi.org/10.25112/rco.v1i0.1547
+
+AMERICAN PSYCHIATRIC ASSOCIATION. DSM-5: Manual Diagnóstico e Estatístico de Transtornos Mentais. 5. ed. Porto Alegre: Artmed, 2014.
+
+AYRES, A. Jean. Sensory integration and the child. Los Angeles: Western Psychological Services, 1972.
+CARDOSO, Nathalia Rodrigues; BLANCO, Marília Bazan. Terapia de integração sensorial e o transtorno do espectro autista: uma revisão sistemática de literatura. Revista Conhecimento Online, Novo Hamburgo, a. 11, v. 1, p. 108-125, jan./abr. 2019. DOI: https://doi.org/10.25112/rco.v1i0.1547
+MOMO, A.; SILVESTRE, C. Integração Sensorial nos Transtornos do Espectro do Autismo. In: SCHWARTZMAN, J. S.; ARAUJO, C. A. Transtornos do Espectro do Autismo. São Paulo: Memnon, 2011. p. 297-313.
+SHIMIZU, V. T.; MIRANDA, M. C. Processamento sensorial na criança com TDAH: uma revisão de literatura. Revista Psicopedagogia, São Paulo, v. 29, n. 89, p. 256-268, 2012.
+SOUZA, Vanessa Rafaelle Brasil de. A atuação do terapeuta ocupacional com base na Teoria da Integração Sensorial na assistência de crianças com Transtorno do Espectro Autista (TEA) durante a pandemia da Covid-19. Revista Interinstitucional Brasileira de Terapia Ocupacional, Rio de Janeiro, v. 4, n. 3, p. 371-379, 2020.
+DIFICULDADE NO DIAGNÓSTICO PRECOCE DO TRANSTORNO DO ESPECTRO AUTISTA E SEU IMPACTO NO ÂMBITO FAMILIAR. (2022). CIPEEX, 2, 1086-1098. https://anais.unievangelica.edu.br/index.php/CIPEEX/article/view/2878 
+
+DE OLIVEIRA JENDREIECK, Céres. DIFICULDADES ENCONTRADAS PELOS PROFISSIONAIS DA SAÚDE AO REALIZAR DIAGNÓSTICO PRECOCE DE AUTISMO. Psicologia Argumento, [S. l.], v. 32, n. 77, 2017. DOI: 10.7213/psicol.argum.32.077.AO09. Disponível em: https://periodicos.pucpr.br/psicologiaargumento/article/view/20149. Acesso em: 9 out. 2026. 
+
+DECLARAÇÃO DE USO DE IA O presente grupo declara que utilizou ferramentas de Inteligência Artificial Generativa para auxiliar na organização textual e revisão estrutural desta etapa do artigo, mantendo-se integralmente responsável pela veracidade técnica e científica do conteúdo, métodos e referenciais propostos. 
+-
